@@ -31,7 +31,7 @@
   grid-column: 3 / 6;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1024px) {
   .gridmain {
     justify-items: center;
   }

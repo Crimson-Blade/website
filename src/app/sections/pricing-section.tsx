@@ -83,7 +83,7 @@ const Pricing: React.FC = () => {
 
   return (
     <div className='text-black min-h-screen flex flex-col justify-center'>
-      <h1 className='mb-14 lg:mt-0 lg:text-7xl font-medium text-center text-5xl mt-20'>A plan that fits your college needs </h1>
+      <h1 className='mb-14 lg:text-7xl font-medium text-center text-5xl mt-20'>A plan that fits your college needs </h1>
       <div className='my-14 flex lg:flex-row gap-12 lg:gap-2 xl:gap-0 flex-col mx-auto md:mx-0 justify-around px-5'>
         {pricingData.map((tier, index) => (
           <PricingTier key={index} {...tier} />

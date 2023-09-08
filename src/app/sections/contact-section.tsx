@@ -25,7 +25,7 @@ export default function Contact() {
               <input type="text" placeholder="Last name" className="input input-bordered" />
             </div>
             <div className="form-control">
-              <input type="text" placeholder="Bussiness email" className="input input-bordered" />
+              <input type="text" placeholder="Business email" className="input input-bordered" />
             </div>
             <div className="form-control">
               <input type="text" placeholder="Your institution" className="input input-bordered" />

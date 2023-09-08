@@ -65,7 +65,7 @@ export default function StudentApp() {
               />
             </div>
             <div className="grid-three-sub1 px-2 lg:pr-12 text-2xl text-white flex justify-center items-center text-right">
-              Real time attendance and grade accesibility.
+              Real time attendance and grade accessibility.
             </div>
           </div>
         </div>
