@@ -48,7 +48,7 @@ export default function StudentApp() {
           <div className={cn(styles.gridtwo, "flex flex-col rounded-3xl border-2 border-gray-500")}>
             <div className='relative flex-1'>
               <Image
-                src="/images/microsoft.svg"
+                src="/images/datamodel.png"
                 alt="Description of Image"
                 fill
                 objectFit="contain"  // Ensures image scales correctly and doesn't overflow
