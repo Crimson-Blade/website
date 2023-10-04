@@ -91,7 +91,7 @@ const Pricing: React.FC = () => {
 
   return (
     <div className='flex min-h-screen flex-col justify-center text-black'>
-      <h1 className='mb-14 mt-20 text-center text-5xl font-medium lg:mt-0 lg:text-7xl'>
+      <h1 className='mb-14 mt-20 text-center text-5xl font-medium lg:text-7xl'>
         A plan that fits your college needs{' '}
       </h1>
       <div className='mx-auto my-14 flex flex-col justify-around gap-12 px-5 md:mx-0 lg:flex-row lg:gap-2 xl:gap-0'>

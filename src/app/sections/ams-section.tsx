@@ -57,7 +57,7 @@ export default function StudentApp() {
           >
             <div className='relative flex-1'>
               <Image
-                src='/images/3d-fluency-database-administrator.png'
+                src='/images/datamodel.png'
                 alt='Description of Image'
                 fill
                 objectFit='contain' // Ensures image scales correctly and doesn't overflow

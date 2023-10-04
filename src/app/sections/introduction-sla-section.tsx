@@ -13,13 +13,13 @@ export default function IntroductionSla() {
     <motion.section
       initial={{ y: 0, opacity: 0 }}
       transition={{ type: 'spring', stiffness: 100, damping: 15, delay: 1.3 }}
-      animate={{ y: -300, opacity: 1 }}
+      animate={{ y: '-13rem', opacity: 1 }}
       style={{
         borderTopLeftRadius: borderRadius,
         borderTopRightRadius: borderRadius,
       }}
       ref={targetRef}
-      className='mb-[-300px] flex h-full  flex-col items-center bg-black md:min-h-screen'
+      className='mb-[-13rem] flex h-full min-h-[50vh] flex-col items-center bg-black md:min-h-screen'
     >
       <div className='flex flex-1 items-center text-xl font-medium text-[#D4B9B9] sm:text-3xl md:text-4xl '>
         <p>Introducing</p>
