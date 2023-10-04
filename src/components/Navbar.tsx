@@ -36,7 +36,7 @@ const Navbar = () => {
                 <Link href='#upease-section-2'>Products</Link>
                 <ul className='p-2'>
                   <li>
-                    <Link href='#upease-section-3'>SLCM</Link>
+                    <Link href='#upease-section-3'>Student App</Link>
                   </li>
                   <li>
                     <Link href='#upease-section-5'>Console</Link>

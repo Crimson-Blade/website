@@ -29,16 +29,16 @@ export default function HomePage() {
         <Hero />
       </section>
       <div className='spacer' style={{ height: '100vh' }}></div>
-      <section className='bg-black ' id='upease-section-2 '>
+      <section className='bg-black ' id='upease-section-2'>
         <IntroductionSla />
       </section>
-      <section className='bg-black' id='upease-section-3 '>
+      <section className='bg-black' id='upease-section-3'>
         <StudentApp />
       </section>
-      <section className='bg-black ' id='upease-section-4 '>
+      <section className='bg-black ' id='upease-section-4'>
         <IntroductionAms />
       </section>
-      <section className='bg-black' id='upease-section-5 '>
+      <section className='bg-black' id='upease-section-5'>
         <AmsPlatform />
       </section>
       <section
