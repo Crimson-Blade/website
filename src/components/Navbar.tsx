@@ -9,7 +9,7 @@ const Navbar = () => {
     transition-all duration-100
     '
     >
-      <div className='navbar px-16'>
+      <div className='navbar ml-6 md:px-16'>
         <div className='navbar-start'>
           <div className='dropdown'>
             <label tabIndex={0} className='btn btn-ghost md:hidden'>
