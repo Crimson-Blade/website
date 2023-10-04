@@ -94,8 +94,8 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <footer className=' max-w-xs:text-w flex min-h-[228px] gap-12 bg-[#0A49D6] p-14 text-white'>
-        <div className='font-semibold'>
+      <footer className=' flex min-h-[228px] gap-12 bg-[#0A49D6] p-14 text-white'>
+        <div className='text-xs font-semibold sm:text-base'>
           {/* <svg
             width='50'
             height='50'

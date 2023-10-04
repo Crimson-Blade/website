@@ -9,7 +9,7 @@ const Navbar = () => {
     transition-all duration-100
     '
     >
-      <div className='navbar px-16'>
+      <div className='navbar ml-6 md:px-16'>
         <div className='navbar-start'>
           <div className='dropdown'>
             <label tabIndex={0} className='btn btn-ghost md:hidden'>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <Link href='#upease-section-2'>Products</Link>
                 <ul className='p-2'>
                   <li>
-                    <Link href='#upease-section-3'>SLCM</Link>
+                    <Link href='#upease-section-3'>Student App</Link>
                   </li>
                   <li>
                     <Link href='#upease-section-5'>Console</Link>
