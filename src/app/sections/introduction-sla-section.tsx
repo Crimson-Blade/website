@@ -19,12 +19,12 @@ export default function IntroductionSla() {
         borderTopRightRadius: borderRadius,
       }}
       ref={targetRef}
-      className='mb-[-13rem] flex h-full min-h-[50vh] md:min-h-screen flex-col items-center bg-black'
+      className='mb-[-13rem] flex h-full min-h-[50vh] flex-col items-center bg-black md:min-h-screen'
     >
-      <div className='flex flex-1 items-center text-xl sm:text-3xl md:text-4xl font-medium text-[#D4B9B9] '>
+      <div className='flex flex-1 items-center text-xl font-medium text-[#D4B9B9] sm:text-3xl md:text-4xl '>
         <p>Introducing</p>
       </div>
-      <h1 className='h-100 w-3/4 flex-1 sm:px-5 text-center text-5xl sm:text-6xl md:text-8xl  text-white'>
+      <h1 className='h-100 w-3/4 flex-1 text-center text-5xl text-white sm:px-5 sm:text-6xl  md:text-8xl'>
         Student Lifecycle Management
       </h1>
     </motion.section>

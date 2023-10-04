@@ -32,7 +32,7 @@ export default function Hero() {
     >
       <div className='layout flex min-h-screen flex-col items-center justify-center py-12 text-center'>
         {/* <Logo className='w-16' /> */}
-        <p className='mt-4 max-w-3xl text-5xl md:text-6xl font-medium'>
+        <p className='mt-4 max-w-3xl text-5xl font-medium md:text-6xl'>
           Data driven solutions to empower {TextPrimary('educators')}, engage{' '}
           {TextPrimary('students')} and bring {TextPrimary('intelligence')}!
         </p>
