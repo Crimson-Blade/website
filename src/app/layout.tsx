@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 import * as React from 'react';
 
 import '@/styles/globals.css';
@@ -11,7 +11,7 @@ import { siteConfig } from '@/constant/config';
 const fontSatoshi = localFont({
   src: 'Satoshi-Variable.woff2',
   variable: '--font-satoshi',
-})
+});
 
 export const metadata: Metadata = {
   title: {

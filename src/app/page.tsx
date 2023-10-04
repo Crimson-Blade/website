@@ -21,7 +21,7 @@ import StudentApp from '@/app/sections/sla-section';
 
 export default function HomePage() {
   return (
-    <main className='z-0 snap-y snap-mandatory '>
+    <main className=' z-0 snap-y snap-mandatory'>
       <Head>
         <title>UpEase</title>
       </Head>
@@ -29,19 +29,22 @@ export default function HomePage() {
         <Hero />
       </section>
       <div className='spacer' style={{ height: '100vh' }}></div>
-      <section className='bg-black ' id='upease-section-2'>
+      <section className='bg-black ' id='upease-section-2 '>
         <IntroductionSla />
       </section>
-      <section className='bg-black' id='upease-section-3'>
+      <section className='bg-black' id='upease-section-3 '>
         <StudentApp />
       </section>
-      <section className='bg-black ' id='upease-section-4'>
+      <section className='bg-black ' id='upease-section-4 '>
         <IntroductionAms />
       </section>
-      <section className='bg-black' id='upease-section-5'>
+      <section className='bg-black' id='upease-section-5 '>
         <AmsPlatform />
       </section>
-      <section className='bg-gradient-to-b from-[#F2F2F2] to-white ' id='upease-section-6'>
+      <section
+        className='bg-gradient-to-b from-[#F2F2F2] to-white '
+        id='upease-section-6'
+      >
         <Pricing />s
       </section>
       <section className='bg-white' id='upease-section-7'>

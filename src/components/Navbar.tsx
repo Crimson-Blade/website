@@ -33,25 +33,28 @@ const Navbar = () => {
               className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
             >
               <li>
-                <Link href="#upease-section-2">Products</Link>
+                <Link href='#upease-section-2'>Products</Link>
                 <ul className='p-2'>
                   <li>
-                    <Link href="#upease-section-3">SLCM</Link>
+                    <Link href='#upease-section-3'>SLCM</Link>
                   </li>
                   <li>
-                    <Link href="#upease-section-5">AMS</Link>
+                    <Link href='#upease-section-5'>Console</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link href="#upease-section-6">Pricing</Link>
+                <Link href='#upease-section-6'>Pricing</Link>
               </li>
               <li>
-                <Link href="#upease-section-7">Contact Us</Link>
+                <Link href='#upease-section-7'>Contact Us</Link>
               </li>
             </ul>
           </div>
-          <Link href="#" className='btn btn-ghost text-xl normal-case text-[var(--color-primary-600)]'>
+          <Link
+            href='#'
+            className='btn btn-ghost text-xl normal-case text-[var(--color-primary-600)]'
+          >
             UpEase
           </Link>
         </div>
@@ -65,16 +68,16 @@ const Navbar = () => {
                     <Link href='#upease-section-3'>Student App</Link>
                   </li>
                   <li>
-                    <Link href="#upease-section-5">AMS Platform</Link>
+                    <Link href='#upease-section-5'>Upease Console</Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <Link href="#upease-section-6">Pricing</Link>
+              <Link href='#upease-section-6'>Pricing</Link>
             </li>
             <li>
-              <Link href="#upease-section-7">Contact Us</Link>
+              <Link href='#upease-section-7'>Contact Us</Link>
             </li>
           </ul>
         </div>
