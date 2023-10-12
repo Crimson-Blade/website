@@ -30,7 +30,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
+              className='menu menu-sm dropdown-content  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
             >
               <li>
                 <Link href='#upease-section-2'>Products</Link>
@@ -58,8 +58,8 @@ const Navbar = () => {
             UpEase
           </Link>
         </div>
-        <div className='navbar-end hidden md:flex'>
-          <ul className='menu menu-horizontal px-1'>
+        <div className='navbar-end hidden  md:flex'>
+          <ul className='menu menu-horizontal gap-6 px-1 text-xl font-medium'>
             <li tabIndex={0}>
               <details>
                 <summary>Products</summary>
