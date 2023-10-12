@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
           <Link
             href='#'
-            className='btn btn-ghost text-xl normal-case text-[var(--color-primary-600)]'
+            className='btn btn-ghost text-4xl normal-case text-[var(--color-primary-600)]'
           >
             UpEase
           </Link>

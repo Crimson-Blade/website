@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
 
 import styles from '@/styles/sla-section.module.css';
 
@@ -12,7 +13,7 @@ export default function StudentApp() {
     <>
       <NavbarBlack />
       <div className={styles.gridmain}>
-        <div className={cn(styles.gridmobile, ' relative')}>
+        <Tilt className={cn(styles.gridmobile, ' relative')}>
           <Image
             src='/images/phone.png'
             alt='Description of Image'
@@ -22,7 +23,7 @@ export default function StudentApp() {
             quality={90}
             priority={true}
           />
-        </div>
+        </Tilt>
         <div className={styles.gridsub}>
           <div
             className={cn(
