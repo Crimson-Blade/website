@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
 
 import styles from '@/styles/ams-section.module.css';
 
@@ -11,7 +12,7 @@ export default function StudentApp() {
     <div>
       <NavbarBlack />
       <div className={styles.gridmain}>
-        <div className={cn(styles.gridmobile, ' relative')}>
+        <Tilt className={cn(styles.gridmobile, ' relative')}>
           <Image
             src='/images/ams.png'
             alt='Description of Image'
@@ -21,7 +22,7 @@ export default function StudentApp() {
             quality={90}
             priority={true}
           />
-        </div>
+        </Tilt>
         <div className={styles.gridsub}>
           <div
             className={cn(
