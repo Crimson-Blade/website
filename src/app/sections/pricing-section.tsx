@@ -55,7 +55,7 @@ const Pricing: React.FC = () => {
   const pricingData: PricingTierProps[] = [
     {
       title: 'Pre-Intelligence Tier',
-      price: '499',
+      price: 'TBD',
       pricefor: '/Student/year',
       features: [
         'Microsoft A1/A3 Licenses',
@@ -67,7 +67,7 @@ const Pricing: React.FC = () => {
     },
     {
       title: 'Intelligence Tier',
-      price: '699',
+      price: 'TBD',
       pricefor: '/Student/year',
       features: [
         'Enhanced Student Learning',
@@ -78,7 +78,7 @@ const Pricing: React.FC = () => {
     },
     {
       title: 'Enterprise Tier',
-      price: 'Custom',
+      price: 'TBD',
       pricefor: '(contact sales)',
       features: [
         'Everything in Intelligence plus',
