@@ -5,6 +5,7 @@ import * as React from 'react';
 
 import AmsPlatform from '@/app/sections/ams-section';
 import Contact from '@/app/sections/contact-section';
+import FrameworkSection from '@/app/sections/framework-section';
 import Hero from '@/app/sections/hero-section';
 import IntroductionAms from '@/app/sections/introduction-ams-section';
 import IntroductionSla from '@/app/sections/introduction-sla-section';
@@ -32,13 +33,19 @@ export default function HomePage() {
       <section className='bg-black ' id='upease-section-2'>
         <IntroductionSla />
       </section>
-      <section className='bg-black' id='upease-section-3'>
+      <section
+        className='h-screen snap-mandatory snap-center  bg-black '
+        id='upease-section-3'
+      >
+        <FrameworkSection />
+      </section>
+      <section className='bg-black' id='upease-section-4'>
         <StudentApp />
       </section>
-      <section className='bg-black ' id='upease-section-4'>
+      <section className='bg-black ' id='upease-section-5'>
         <IntroductionAms />
       </section>
-      <section className='bg-black' id='upease-section-5'>
+      <section className='bg-black' id='upease-section-6'>
         <AmsPlatform />
       </section>
       <section
