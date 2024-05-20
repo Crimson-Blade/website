@@ -12,7 +12,6 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
-    svg: React.ReactNode;
     content?: React.ReactNode;
   }[];
   contentClassName?: string;
