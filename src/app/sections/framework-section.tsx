@@ -3,39 +3,6 @@ import React from 'react';
 import Graph from '@/components/Graph';
 import { StickyScroll } from '@/components/ui/Sticky-scroll-reveal';
 
-// // type Props = object;
-// type Framework = {
-//   id: number;
-//   description: string;
-// };
-
-// const frameworkList: Framework[] = [
-//   {
-//     id: 1,
-//     description: 'First half of the framework',
-//   },
-//   {
-//     id: 2,
-//     description: 'Second half of the framework',
-//   },
-//   {
-//     id: 3,
-//     description: 'Third half of the framework',
-//   },
-//   {
-//     id: 4,
-//     description: 'Fourth half of the framework',
-//   },
-//   {
-//     id: 5,
-//     description: 'Fifth half of the framework',
-//   },
-//   {
-//     id: 6,
-//     description: 'Sixth half of the framework',
-//   },
-// ];
-
 const FrameworkSection = () => {
   const content = [
     {
@@ -83,37 +50,9 @@ const FrameworkSection = () => {
       content: <Graph highlightedNumber={4} />,
     },
   ];
-  const targetRef = React.useRef<HTMLDivElement>(null); // Add type annotation to targetRef
-
-  const handleClick = () => {
-    if (targetRef.current) {
-      window.scrollTo({
-        //center
-        top: targetRef.current.offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  };
   return (
-    <div className='top-0 h-full w-full ' onClick={handleClick}>
-      <div className='h-full w-full '>
-        <StickyScroll content={content} />
-      </div>
-
-      {/* <Graph /> */}
-      {/* <div className='flex w-full flex-col gap-10 text-center'>
-        {frameworkList.map((framework: Framework) => (
-          <div key={framework.id} className='flex items-center gap-2'>
-            <span className='rounded-full bg-white p-4 font-semibold text-black'>
-              {framework.id}
-            </span>
-            <p className=' text-3xl'>{framework.description}</p>
-          </div>
-        ))}
-      </div>
-      <div className='text-5x h-3/4 w-full rounded-3xl border-2 border-gray-900 bg-slate-400 '>
-        second half
-      </div> */}
+    <div className='h-full w-full'>
+      <StickyScroll content={content} />
     </div>
   );
 };

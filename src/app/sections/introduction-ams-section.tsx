@@ -2,25 +2,8 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 export default function IntroductionAms() {
-  // const targetRef = React.useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: targetRef,
-  //   offset: ['start end', 'end start'],
-  // });
-  // const borderRadius = useTransform(scrollYProgress, [0, 0.3], [150, 0]);
-
   return (
-    <motion.section
-      // initial={{ y: 0, opacity: 0 }}
-      // transition={{ type: 'spring', stiffness: 100, damping: 15, delay: 1.3 }}
-      // animate={{ y: -300, opacity: 1 }}
-      // style={{
-      //   borderTopLeftRadius: borderRadius,
-      //   borderTopRightRadius: borderRadius,
-      // }}
-      // ref={targetRef}
-      className='flex h-full min-h-[50vh] flex-col items-center bg-black md:min-h-screen'
-    >
+    <motion.section className='flex h-full min-h-[50vh] flex-col items-center bg-black md:min-h-screen'>
       <div className=' flex flex-1 items-start text-xl font-medium text-[#D4B9B9] sm:text-3xl md:text-4xl '>
         <p>Introducing</p>
       </div>

@@ -9,7 +9,6 @@ import FrameworkSection from '@/app/sections/framework-section';
 import Hero from '@/app/sections/hero-section';
 import IntroductionAms from '@/app/sections/introduction-ams-section';
 import IntroductionSla from '@/app/sections/introduction-sla-section';
-import Pricing from '@/app/sections/pricing-section';
 import StudentApp from '@/app/sections/sla-section';
 /**
  * SVGR Support
@@ -29,12 +28,12 @@ export default function HomePage() {
       <section id='upease-section-1'>
         <Hero />
       </section>
-      <div className='spacer' style={{ height: '100vh' }}></div>
+      <div className='spacer h-screen'></div>
       <section className='bg-black ' id='upease-section-2'>
         <IntroductionSla />
       </section>
       <section
-        className='h-screen snap-mandatory snap-center  bg-black '
+        className='h-screen snap-mandatory snap-center bg-black '
         id='upease-section-3'
       >
         <FrameworkSection />
@@ -48,12 +47,12 @@ export default function HomePage() {
       <section className='bg-black' id='upease-section-6'>
         <AmsPlatform />
       </section>
-      <section
+      {/* <section
         className='bg-gradient-to-b from-[#F2F2F2] to-white '
         id='upease-section-6'
       >
         <Pricing />s
-      </section>
+      </section> */}
       <section className='bg-white' id='upease-section-7'>
         <Contact />
       </section>

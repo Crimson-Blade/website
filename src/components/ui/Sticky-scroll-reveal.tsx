@@ -13,11 +13,12 @@ export const StickyScroll = ({
     title: string;
     description: string;
     svg: React.ReactNode;
-    content?: React.ReactNode | any;
+    content?: React.ReactNode;
   }[];
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
@@ -53,7 +54,7 @@ export const StickyScroll = ({
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
       transition={{ ease: 'easeInOut', duration: 0.5 }}
-      className='no-scrollbar relative flex h-full w-full items-center justify-center space-x-10 overflow-y-auto rounded-md p-10'
+      className='no-scrollbar relative flex h-full w-full snap-center items-center justify-center space-x-10 overflow-y-auto rounded-md p-10'
       ref={ref}
     >
       <motion.div className='div relative flex h-[40rem] justify-center px-4'>
@@ -71,7 +72,7 @@ export const StickyScroll = ({
                 }}
                 transition={{
                   ease: 'easeInOut',
-                  duration: 1,
+                  duration: 0.5,
                 }}
                 className='text-5xl font-bold text-slate-100'
               >
@@ -88,7 +89,7 @@ export const StickyScroll = ({
                 }}
                 transition={{
                   ease: 'easeInOut',
-                  duration: 1,
+                  duration: 0.5,
                 }}
                 className='mt-10 max-w-5xl text-xl text-slate-300'
               >
@@ -102,7 +103,7 @@ export const StickyScroll = ({
       </motion.div>
       <motion.div
         initial={{
-          x: -2000,
+          x: 2000,
           opacity: 0,
         }}
         animate={{
