@@ -98,36 +98,38 @@ export default function Hero() {
           zIndex: -1,
         }}
       >
-        {[...Array(Math.ceil(window.innerWidth / 50))].map((_, index) => (
-          <div
-            key={index}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: `${index * 100}px`,
-              width: '1px',
-              height: '100%',
-              backgroundColor: '#A9A9A9',
-            }}
-          />
-        ))}
+        {typeof window !== 'undefined' &&
+          [...Array(Math.ceil(window.innerWidth / 50))].map((_, index) => (
+            <div
+              key={index}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: `${index * 100}px`,
+                width: '1px',
+                height: '100%',
+                backgroundColor: '#A9A9A9',
+              }}
+            />
+          ))}
 
         {/* Horizontal inclined lines */}
-        {[...Array(Math.ceil(window.innerHeight / 50))].map((_, index) => (
-          <div
-            key={`horizontal-${index}`}
-            style={{
-              position: 'absolute',
-              top: `${index * 100}px`,
-              left: 0,
-              width: '100%',
-              height: '1px',
-              backgroundColor: '#A9A9A9',
-              transform: `rotate(10deg)`,
-              transformOrigin: 'top right',
-            }}
-          />
-        ))}
+        {typeof window !== 'undefined' &&
+          [...Array(Math.ceil(window.innerHeight / 50))].map((_, index) => (
+            <div
+              key={`horizontal-${index}`}
+              style={{
+                position: 'absolute',
+                top: `${index * 100}px`,
+                left: 0,
+                width: '100%',
+                height: '1px',
+                backgroundColor: '#A9A9A9',
+                transform: `rotate(10deg)`,
+                transformOrigin: 'top right',
+              }}
+            />
+          ))}
       </div>
     </motion.div>
   );
