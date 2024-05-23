@@ -11,19 +11,38 @@ const NavbarBlack: React.FC = () => {
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   return (
     <motion.nav
-      className="sticky top-10 z-50 w-full mx-auto md:text-lg"
+      className='sticky top-10 z-50 mx-auto w-full md:text-lg'
       ref={targetRef}
       style={{ opacity }}
     >
-      <div className="container flex bg-[#252424] border border-gray-500 w-fit rounded-full items-center justify-center p-4 mx-auto  capitalize text-white">
-        <Link href="#upease-section-1" className=" border-b-2 border-transparent hover:text-gray-200 hover:border-blue-500 border-blue-500 mx-1.5 sm:mx-6">UpEase</Link>
+      <div className='container mx-auto flex w-fit items-center justify-center rounded-full border border-gray-500 bg-[#252424] p-4  capitalize text-white'>
+        <Link
+          href='#upease-section-1'
+          className=' mx-1.5 border-b-2 border-blue-500 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
+        >
+          UpEase
+        </Link>
 
-        <Link href="#upease-section-3" className="border-b-2 border-transparent hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Products</Link>
+        <Link
+          href='#upease-section-3'
+          className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
+        >
+          Products
+        </Link>
 
-        <Link href="#upease-section-6" className="border-b-2 border-transparent hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">pricing</Link>
+        <Link
+          href='#upease-section-6'
+          className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
+        >
+          pricing
+        </Link>
 
-        <Link href="#upease-section-7" className="border-b-2 border-transparent hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Contact Us</Link>
-
+        <Link
+          href='#upease-section-7'
+          className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
+        >
+          Contact Us
+        </Link>
       </div>
     </motion.nav>
   );
