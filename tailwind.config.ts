@@ -1,15 +1,17 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
-import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
-
+// import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
-  
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        primary: ['var(--font-satoshi)', 'Inter', ...defaultTheme.fontFamily.sans],
+        primary: [
+          'var(--font-satoshi)',
+          'Inter',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       colors: {
         primary: {
@@ -55,21 +57,21 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require("daisyui") ],
-  addVariablesForColors,
+  plugins: [require('@tailwindcss/forms'), require('daisyui')],
+  // addVariablesForColors,
 
   daisyui: {
-    themes: ["light"],
+    themes: ['light'],
   },
 } satisfies Config;
 
-function addVariablesForColors({ addBase, theme }: any) {
-  const allColors = flattenColorPalette(theme("colors"));
-  const newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
-  addBase({
-    ":root": newVars,
-  });
-} 
+// function addVariablesForColors({ addBase, theme }: any) {
+//   const allColors = flattenColorPalette(theme("colors"));
+//   const newVars = Object.fromEntries(
+//     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+//   );
+
+//   addBase({
+//     ":root": newVars,
+//   });
+// }
