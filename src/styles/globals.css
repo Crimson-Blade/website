@@ -2,17 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .snap {
     scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
   }
+
   .snap-y {
     --scroll-snap-direction: y;
   }
+
   .snap-mandatory {
     --scroll-snap-constraint: mandatory;
   }
+
   .snap-start {
     scroll-snap-align: start;
   }
@@ -23,7 +25,6 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
 }
 
 :root {
@@ -41,9 +42,9 @@
   --tw-color-primary-800: 55 48 163;
   --tw-color-primary-900: 49 46 129;
   --tw-color-primary-950: 30 27 75;
-  --neutral-900: 23,23,23;
-  --slate-900: 15,23,42;
-  
+  --neutral-900: 23, 23, 23;
+  --slate-900: 15, 23, 42;
+
   --color-primary-50: rgb(var(--tw-color-primary-50));
   /* #eef2ff */
   --color-primary-100: rgb(var(--tw-color-primary-100));
@@ -120,6 +121,7 @@
   .p {
     @apply font-primary text-sm md:text-base;
   }
+
   /* #endregion  /**======== Typography =========== */
 
   .layout {
@@ -150,6 +152,7 @@
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
   }
+
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
       transition: 0.3s ease;
@@ -157,9 +160,9 @@
         border-color;
     }
   }
+
   .animated-underline:hover,
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
   }
 }
-

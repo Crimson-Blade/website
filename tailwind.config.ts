@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
-// import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -57,21 +56,12 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('daisyui')],
-  // addVariablesForColors,
-
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('daisyui'),
+    // addVariablesForColors,
+  ],
   daisyui: {
     themes: ['light'],
   },
 } satisfies Config;
-
-// function addVariablesForColors({ addBase, theme }: any) {
-//   const allColors = flattenColorPalette(theme("colors"));
-//   const newVars = Object.fromEntries(
-//     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-//   );
-
-//   addBase({
-//     ":root": newVars,
-//   });
-// }
