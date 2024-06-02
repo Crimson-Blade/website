@@ -1,8 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React from 'react';
 
-import { SparklesCore } from '@/components/ui/sparkles';
-
 export default function IntroductionSla() {
   const targetRef = React.useRef<HTMLDivElement>(null); // Add type annotation to targetRef
   const { scrollYProgress } = useScroll({
@@ -31,7 +29,7 @@ export default function IntroductionSla() {
       }}
       ref={targetRef}
       onClick={handleClick}
-      className='mb-[-14rem] flex h-full min-h-[50vh] flex-col items-center bg-black md:min-h-screen'
+      className='z-50 flex h-full min-h-[50vh] flex-col items-center bg-black pb-80 md:min-h-full'
     >
       <div className='mt-10 flex flex-1 flex-col items-center gap-6 text-xl font-medium text-[#D4B9B9] sm:text-3xl md:text-4xl '>
         <motion.svg
@@ -50,31 +48,31 @@ export default function IntroductionSla() {
         </motion.svg>
         <p className='hover:cursor-pointer'>Introducing</p>
       </div>
-      <div className='flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black'>
+      {/* <div className='flex h-[40rem] w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black'>
         <h1 className='relative z-20 text-center text-2xl font-bold text-white md:text-5xl lg:text-8xl'>
-          Upease Framework
-        </h1>
-        <div className='relative h-40 w-[40rem]'>
+          UpEase Framework
+        </h1> */}
+      {/* <div className='relative h-40 w-[40rem]'>
           {/* Gradients */}
-          <div className='absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm' />
+      {/* <div className='absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm' />
           <div className='absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent' />
           <div className='absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm' />
-          <div className='absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent' />
+          <div className='absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent' /> */}
 
-          {/* Core component */}
-          <SparklesCore
+      {/* Core component */}
+      {/* <SparklesCore
             background='transparent'
             minSize={0.4}
             maxSize={1.5}
             particleDensity={1200}
             className='h-3/4 w-full'
             particleColor='#FFFFFF'
-          />
+          /> */}
 
-          {/* Radial Gradient to prevent sharp edges */}
-          <div className='absolute inset-0 h-full w-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]'></div>
-        </div>
-      </div>
+      {/* Radial Gradient to prevent sharp edges */}
+      {/* <div className='absolute inset-0 h-full w-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]'></div>
+        </div> */}
+      {/* </div> */}
     </motion.section>
   );
 }

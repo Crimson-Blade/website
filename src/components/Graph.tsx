@@ -44,13 +44,13 @@ export const Graph = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-900, -50]),
+    useTransform(scrollYProgress, [0, 0.2], ['-900vh', '0vh']),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className='relative flex h-[250vh] flex-col items-center justify-between self-auto overflow-hidden pb-28  antialiased [perspective:1000px] [transform-style:preserve-3d]'
+      className='relative z-50 flex h-[400vh] flex-col items-center justify-between self-auto overflow-hidden pb-28 antialiased [perspective:1000px] [transform-style:preserve-3d] md:h-[250vh]'
     >
       <Header />
       <motion.div
@@ -62,7 +62,7 @@ export const Graph = ({
         }}
         className=''
       >
-        <motion.div className='mb-18 flex-row-reverse space-x-8 space-x-reverse '>
+        <motion.div className='mb-18 flex-row-reverse'>
           {firstRow.map((product) => (
             <>
               <ProductCard
@@ -73,7 +73,7 @@ export const Graph = ({
             </>
           ))}
         </motion.div>
-        <motion.div className='mb-18 flex flex-row space-x-8 '>
+        <motion.div className='mb-18 flex flex-row  '>
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -82,7 +82,7 @@ export const Graph = ({
             />
           ))}
         </motion.div>
-        <motion.div className='flex flex-row-reverse space-x-8 space-x-reverse'>
+        <motion.div className='flex flex-row-reverse'>
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -98,11 +98,11 @@ export const Graph = ({
 
 export const Header = () => {
   return (
-    <div className='relative left-0 top-0 mx-auto w-full max-w-7xl px-4  py-20 md:py-40'>
-      <h1 className='text-2xl font-bold md:text-7xl dark:text-white'>
-        Powered by AI
+    <div className='relative left-0 top-0 z-50 mx-auto w-full max-w-7xl px-4 py-20 md:py-40'>
+      <h1 className='text-4xl font-bold text-white md:text-8xl'>
+        UpEase Framework
       </h1>
-      <p className='z-50 mt-8 max-w-2xl text-base md:text-xl dark:text-neutral-200'>
+      <p className=' mt-8 max-w-2xl text-base text-white md:text-xl'>
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
@@ -113,29 +113,21 @@ export const Header = () => {
 
 export const ProductCard = ({
   product,
-}: // translate,
-{
+}: {
   product: {
     title: string;
     description1: string;
     description2: string;
     display: React.ReactNode;
   };
-  // translate: MotionValue<number>;
 }) => {
   return (
     <motion.div
-      // style={{
-      //   x: translate,
-      // }}
-      // whileHover={{
-      //   y: -20,
-      // }}
       key={product.title}
-      className='group relative my-auto flex h-[30rem] max-w-[30rem] flex-shrink-0 items-center justify-center duration-300 hover:scale-125 hover:cursor-pointer'
+      className='mw-full group relative z-20 my-auto flex h-[30rem] flex-shrink-0 items-center justify-center duration-300 hover:scale-125 hover:cursor-pointer'
     >
       <div className=''>{product.display} </div>
-      <div className='bg-blue border-primary-900 absolute left-0 flex h-48 w-[20rem] items-center border-t-2 p-4  text-white opacity-0 duration-300 group-hover:-translate-x-[25rem]  group-hover:opacity-100'>
+      <div className='bg-blue border-primary-900 absolute left-0 flex h-48 w-[20rem] items-center border-t-2 p-4  text-white opacity-0 duration-500 group-hover:-translate-x-[25rem]  group-hover:opacity-100'>
         <p className='flex flex-col'>
           <span className='text-primary-800 text-3xl font-semibold'>
             {product.title}
@@ -156,7 +148,7 @@ export const ProductCard = ({
         </div>
       </div>
 
-      <div className='bg-blue border-primary-900 absolute right-0 flex h-48 w-[20rem] items-center gap-2 border-t-2 p-4  text-white opacity-0 duration-300 group-hover:translate-x-[25rem]  group-hover:opacity-100'>
+      <div className='bg-blue border-primary-900 absolute right-0 flex h-48 w-[20rem] items-center gap-2 border-t-2 p-4  text-white opacity-0 duration-500 group-hover:translate-x-[25rem]  group-hover:opacity-100'>
         <div>
           <svg
             xmlns='http://www.w3.org/2000/svg'
