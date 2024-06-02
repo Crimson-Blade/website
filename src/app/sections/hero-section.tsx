@@ -4,6 +4,7 @@ import React from 'react';
 
 import { AceButton } from '@/components/buttons/acebutton';
 import { HoverBorderGradient } from '@/components/buttons/acehoverbutton';
+import { Boxes } from '@/components/ui/background-boxes';
 
 function TextPrimary(children: React.ReactNode) {
   return <span className='text-[var(--color-primary-600)]'>{children}</span>;
@@ -44,38 +45,37 @@ export default function Hero() {
         top: 0,
         left: 0,
         width: '100%',
-        zIndex: -10,
-        overflowX: 'hidden',
       }}
-      className='relative -z-10 h-screen'
+      className='relative  h-screen'
     >
       <div
         className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'
         style={{ paddingTop: '100px' }}
       >
+        <Boxes />
         {/* <Logo className='w-16' /> */}
         <div className='justify-center text-center'>
           <HoverBorderGradient
             containerClassName='rounded-full'
             as='button'
-            className='flex items-center space-x-2 bg-white text-black'
+            className='z-50 flex items-center space-x-2 bg-white text-black'
           >
             Read: Introducing UpEase
           </HoverBorderGradient>
         </div>
 
-        <p className='mt-4 max-w-4xl text-4xl font-bold md:text-6xl'>
+        <p className='z-50 mt-4 max-w-5xl text-4xl font-bold md:text-7xl'>
           {/* Data driven solutions to empower {TextPrimary('educators')}, engage{' '}
           {TextPrimary('students')} and bring {TextPrimary('intelligence')}! */}
           A {TextPrimary('Copilot')} for higher education
         </p>
-        <p className='mt-4 max-w-3xl text-xl font-normal'>
+        <p className='z-50 mt-4 max-w-3xl text-xl font-semibold'>
           We provide data driven solutions to empower{' '}
           {TextHighlight('educators')}, engage {TextHighlight('students')} and
           bring {TextHighlight('intelligence')}!
         </p>
         <div className='relative mt-8'>
-          <AceButton className='relative bg-[var(--color-primary-600)] font-semibold text-white '>
+          <AceButton className='relative z-50 bg-[var(--color-primary-600)] font-semibold text-white '>
             Start a Conversation
           </AceButton>
           <Image
@@ -88,7 +88,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           top: 0,
@@ -97,8 +97,8 @@ export default function Hero() {
           height: '100%',
           zIndex: -1,
         }}
-      >
-        {typeof window !== 'undefined' &&
+      > */}
+      {/* {typeof window !== 'undefined' &&
           [...Array(Math.ceil(window.innerWidth / 50))].map((_, index) => (
             <div
               key={index}
@@ -111,10 +111,10 @@ export default function Hero() {
                 backgroundColor: '#A9A9A9',
               }}
             />
-          ))}
+          ))} */}
 
-        {/* Horizontal inclined lines */}
-        {typeof window !== 'undefined' &&
+      {/* Horizontal inclined lines */}
+      {/* {typeof window !== 'undefined' &&
           [...Array(Math.ceil(window.innerHeight / 50))].map((_, index) => (
             <div
               key={`horizontal-${index}`}
@@ -129,8 +129,8 @@ export default function Hero() {
                 transformOrigin: 'top right',
               }}
             />
-          ))}
-      </div>
+          ))} */}
+      {/* </div> */}
     </motion.div>
   );
 }

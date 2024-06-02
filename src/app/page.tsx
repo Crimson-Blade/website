@@ -32,10 +32,7 @@ export default function HomePage() {
       <section className='bg-black ' id='upease-section-2'>
         <IntroductionSla />
       </section>
-      <section
-        className='h-screen snap-mandatory snap-center bg-black '
-        id='upease-section-3'
-      >
+      <section className='bg-black ' id='upease-section-3'>
         <FrameworkSection />
       </section>
       <section className='bg-black' id='upease-section-4'>
