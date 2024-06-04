@@ -44,13 +44,13 @@ export const Graph = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], ['-900vh', '0vh']),
+    useTransform(scrollYProgress, [0, 0.2], [-900, 0]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className='relative z-50 flex h-[400vh] flex-col items-center justify-between self-auto overflow-hidden pb-28 antialiased [perspective:1000px] [transform-style:preserve-3d] md:h-[250vh]'
+      className=' relative z-50 flex h-[350vh] flex-col items-center justify-between self-auto overflow-hidden pb-28 antialiased [perspective:1000px] [transform-style:preserve-3d] md:h-[250vh]'
     >
       <Header />
       <motion.div

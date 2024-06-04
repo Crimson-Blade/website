@@ -11,7 +11,7 @@ export default function FrameworkSection() {
       description1:
         'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
       description2:
-        'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
+        'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit masti',
       display: (
         <div className='space-y-6  px-4'>
           <div className='flex w-full gap-3 text-sm md:text-base'>
