@@ -31,13 +31,6 @@ const NavbarBlack: React.FC = () => {
         </Link>
 
         <Link
-          href='#upease-section-6'
-          className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
-        >
-          pricing
-        </Link>
-
-        <Link
           href='#upease-section-7'
           className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
         >

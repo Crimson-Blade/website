@@ -8,6 +8,7 @@ import Contact from '@/app/sections/contact-section';
 import FrameworkSection from '@/app/sections/framework-section';
 import Hero from '@/app/sections/hero-section';
 import IntroductionAms from '@/app/sections/introduction-ams-section';
+import IntroductionFramework from '@/app/sections/introduction-framework-section';
 import IntroductionSla from '@/app/sections/introduction-sla-section';
 import StudentApp from '@/app/sections/sla-section';
 /**
@@ -30,10 +31,13 @@ export default function HomePage() {
       </section>
       <div className='spacer h-screen'></div>
       <section className='bg-black ' id='upease-section-2'>
-        <IntroductionSla />
+        <IntroductionFramework />
       </section>
       <section className='bg-black ' id='upease-section-3'>
         <FrameworkSection />
+      </section>
+      <section className='bg-black ' id='upease-section-3'>
+        <IntroductionSla />
       </section>
       <section className='bg-black' id='upease-section-4'>
         <StudentApp />
