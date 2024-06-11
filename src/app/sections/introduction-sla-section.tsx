@@ -7,7 +7,7 @@ export default function IntroductionSla() {
       <div className=' flex flex-1 items-start text-xl font-medium text-[#D4B9B9] sm:text-3xl md:text-4xl '>
         <p>Streamlining</p>
       </div>
-      <h1 className='h-100 w-3/4 flex-1 text-center text-5xl text-white sm:px-5 sm:text-6xl  md:text-8xl'>
+      <h1 className='h-100 w-3/4 flex-1 text-center text-4xl text-white sm:px-5 sm:text-4xl  md:text-8xl'>
         Student LifeCycle Management
       </h1>
     </motion.section>

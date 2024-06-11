@@ -32,6 +32,26 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const translateY = useTransform(scrollYProgress, [0, 0.5], [0, -100]);
 
+  const handleClick2 = () => {
+    const targetElement = document.getElementById('upease-section-2');
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const handleClick7 = () => {
+    const targetElement = document.getElementById('upease-section-7');
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <motion.div
       ref={targetRef}
@@ -46,7 +66,7 @@ export default function Hero() {
         left: 0,
         width: '100%',
       }}
-      className='relative  h-screen'
+      className='relative z-0 h-full'
     >
       <div
         className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'
@@ -60,22 +80,25 @@ export default function Hero() {
             as='button'
             className='z-50 flex items-center space-x-2 bg-white text-black'
           >
-            Read: Introducing UpEase
+            <button onClick={handleClick2}>Read: Introducing UpEase</button>
           </HoverBorderGradient>
         </div>
 
-        <p className='z-50 mt-4 max-w-5xl text-4xl font-bold md:text-7xl'>
+        <p className='z-30 mt-4 max-w-5xl text-4xl font-bold md:text-7xl'>
           {/* Data driven solutions to empower {TextPrimary('educators')}, engage{' '}
           {TextPrimary('students')} and bring {TextPrimary('intelligence')}! */}
           A {TextPrimary('Copilot')} for higher education
         </p>
-        <p className='z-50 mt-4 max-w-3xl text-xl font-semibold'>
+        <p className='z-30 mt-4 max-w-3xl text-xl font-semibold'>
           We provide data driven solutions to empower{' '}
           {TextHighlight('educators')}, engage {TextHighlight('students')} and
           bring {TextHighlight('intelligence')}!
         </p>
         <div className='relative mt-8'>
-          <AceButton className='relative z-50 bg-[var(--color-primary-600)] font-semibold text-white '>
+          <AceButton
+            className='relative z-30 bg-[var(--color-primary-600)] font-semibold text-white '
+            onClick={handleClick7}
+          >
             Start a Conversation
           </AceButton>
           <Image

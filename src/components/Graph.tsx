@@ -148,9 +148,9 @@ export const Graph = ({
           viewport={{ once: true }}
           className='group mx-auto flex w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:p-8'
         >
+          <DescriptionBox products={products[3]} translate={600} />
           <div className='mx-auto text-3xl font-semibold'>
             {products[3].title}
-            <DescriptionBox products={products[3]} translate={450} />
           </div>
         </motion.div>
       </div>
@@ -394,7 +394,7 @@ export const DescriptionBox = ({
 }) => {
   return (
     <motion.div
-      className='absolute -mt-6 flex h-[10rem] w-[20rem] flex-col gap-2 rounded-xl bg-gray-400 p-2 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
+      className='absolute mt-4 flex h-[10rem] w-[20rem] flex-col gap-2 rounded-xl bg-gray-400 p-2 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
       style={{ x: translate }}
       transition={{ duration: 1 }}
     >

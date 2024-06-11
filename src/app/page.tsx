@@ -29,20 +29,20 @@ export default function HomePage() {
       <section id='upease-section-1'>
         <Hero />
       </section>
-      <div className='spacer h-screen'></div>
-      <section className='bg-black ' id='upease-section-2'>
+      <div className='spacer z-0 h-screen'></div>
+      <section className=' bg-black' id='upease-section-2'>
         <IntroductionFramework />
       </section>
-      <section className='bg-black ' id='upease-section-3'>
+      <section className=' bg-black' id='upease-section-3'>
         <FrameworkSection />
       </section>
-      <section className='bg-black ' id='upease-section-3'>
+      <section className=' bg-black' id='upease-section-3'>
         <IntroductionSla />
       </section>
       <section className='bg-black' id='upease-section-4'>
         <StudentApp />
       </section>
-      <section className='bg-black ' id='upease-section-5'>
+      <section className=' bg-black' id='upease-section-5'>
         <IntroductionAms />
       </section>
       <section className='bg-black' id='upease-section-6'>
@@ -54,7 +54,7 @@ export default function HomePage() {
       >
         <Pricing />s
       </section> */}
-      <section className='bg-white' id='upease-section-7'>
+      <section className='z-50 bg-white' id='upease-section-7'>
         <Contact />
       </section>
     </main>
