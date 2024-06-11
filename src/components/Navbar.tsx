@@ -11,11 +11,11 @@ const Navbar = () => {
     >
       <div className='navbar ml-6 md:px-16'>
         <div className='navbar-start'>
-          <div className='dropdown'>
-            <label tabIndex={0} className='btn btn-ghost md:hidden'>
+          <div className='dropdown z-50'>
+            <label tabIndex={0} className='btn btn-ghost z-50 lg:hidden'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-5 w-5'
+                className='mt-2 h-5 w-5'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <Link href='#upease-section-2'>Products</Link>
                 <ul className='p-2'>
                   <li>
-                    <Link href='#upease-section-3'>Student App</Link>
+                    <Link href='#upease-section-4'>Student App</Link>
                   </li>
                   <li>
                     <Link href='#upease-section-5'>Console</Link>
@@ -68,21 +68,21 @@ const Navbar = () => {
           <Image
             src='/images/UpEase.svg'
             alt='Description of Image'
-            width={130}
-            height={150}
-            className=' mt-4'
+            width={150}
+            height={170}
+            className=' z-50 mt-4'
 
             // objectFit='contain' // Ensures image scales correctly and doesn't overflow
           />
         </div>
-        <div className='navbar-center hidden md:flex'>
+        <div className='navbar-center z-50 hidden lg:flex'>
           <ul className='menu menu-horizontal gap-6 px-1 text-xl font-medium'>
             <li tabIndex={0}>
               <details>
-                <summary>Products</summary>
+                <summary className='text-2xl font-semibold'>Products</summary>
                 <ul className='p-2'>
                   <li>
-                    <Link href='#upease-section-3'>Student App</Link>
+                    <Link href='#upease-section-4'>Student App</Link>
                   </li>
                   <li>
                     <Link href='#upease-section-5'>Upease Console</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
             </li>
             <li tabIndex={0}>
               <details>
-                <summary>Company</summary>
+                <summary className='text-2xl font-semibold'>Company</summary>
                 <ul className='p-2'>
                   <li>
                     <Link href='#upease-section-3'>About</Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className='navbar-end hidden md:flex '>
+        <div className='navbar-end z-50 hidden md:flex'>
           <Link
             href='#'
             className=' flex h-12 w-48 items-center justify-center rounded-full bg-[var(--color-primary-600)] text-center text-lg text-white'

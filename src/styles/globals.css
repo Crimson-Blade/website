@@ -18,6 +18,13 @@
   .snap-start {
     scroll-snap-align: start;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 :root {
@@ -35,6 +42,9 @@
   --tw-color-primary-800: 55 48 163;
   --tw-color-primary-900: 49 46 129;
   --tw-color-primary-950: 30 27 75;
+  --neutral-900: 23, 23, 23;
+  --slate-900: 15, 23, 42;
+
   --color-primary-50: rgb(var(--tw-color-primary-50));
   /* #eef2ff */
   --color-primary-100: rgb(var(--tw-color-primary-100));
@@ -57,6 +67,11 @@
   /* #312e81 */
   --color-primary-950: rgb(var(--tw-color-primary-950));
   /* #1e1b4b */
+  --color-neutral-900: rgb(var(--neutral-900));
+  /* #171717 */
+  --color-slate-900: rgb(var(--slate-900));
+  /* #0f172a */
+
   /* #endregion  /**======== Primary Color =========== */
 }
 

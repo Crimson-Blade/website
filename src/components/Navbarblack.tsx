@@ -15,7 +15,7 @@ const NavbarBlack: React.FC = () => {
       ref={targetRef}
       style={{ opacity }}
     >
-      <div className='container mx-auto flex w-fit items-center justify-center rounded-full border border-gray-500 bg-[#252424] p-4  capitalize text-white'>
+      <div className='container mx-auto flex w-fit items-center justify-center rounded-full border-2 border-gray-500 bg-[#252424] p-4  capitalize text-white'>
         <Link
           href='#upease-section-1'
           className=' mx-1.5 border-b-2 border-blue-500 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
@@ -24,17 +24,10 @@ const NavbarBlack: React.FC = () => {
         </Link>
 
         <Link
-          href='#upease-section-3'
+          href='#upease-section-4'
           className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
         >
           Products
-        </Link>
-
-        <Link
-          href='#upease-section-6'
-          className='mx-1.5 border-b-2 border-transparent hover:border-blue-500 hover:text-gray-200 sm:mx-6'
-        >
-          pricing
         </Link>
 
         <Link
