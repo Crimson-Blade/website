@@ -22,7 +22,7 @@ import StudentApp from '@/app/sections/sla-section';
 
 export default function HomePage() {
   return (
-    <main className=' z-0 snap-y snap-mandatory'>
+    <main className='snap-y snap-mandatory'>
       <Head>
         <title>UpEase</title>
       </Head>
@@ -30,7 +30,7 @@ export default function HomePage() {
         <Hero />
       </section>
       <div className='spacer z-0 h-screen'></div>
-      <section className=' bg-black' id='upease-section-2'>
+      <section className='bg-black' id='upease-section-2'>
         <IntroductionFramework />
       </section>
       <section className=' bg-black' id='upease-section-3'>

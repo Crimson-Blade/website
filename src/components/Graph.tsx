@@ -49,7 +49,7 @@ export const Graph = ({
               whileInView='animate'
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className='group relative flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-44 md:p-10 md:text-xl lg:-left-32 lg:top-16'
+              className='group relative flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-44 md:p-10 md:text-xl lg:-left-32 lg:top-16'
             >
               {products[0].title}
               <DescriptionBox products={products[0]} translate={-400} />
@@ -61,7 +61,7 @@ export const Graph = ({
               whileInView='animate'
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className='group flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-48 md:p-10 md:text-xl'
+              className='group flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-48 md:p-10 md:text-xl'
             >
               {products[1].title}
             </motion.div>
@@ -71,7 +71,7 @@ export const Graph = ({
               whileInView='animate'
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className='group relative flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-44 md:p-10 md:text-xl lg:-right-32 lg:top-16'
+              className='group relative flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-44 md:p-10 md:text-xl lg:-right-32 lg:top-16'
             >
               {products[2].title}
               <DescriptionBox products={products[2]} translate={170} />
@@ -146,7 +146,7 @@ export const Graph = ({
           whileInView='animate'
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className='group mx-auto flex w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:p-8'
+          className='group mx-auto flex w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:p-8'
         >
           <DescriptionBox products={products[3]} translate={600} />
           <div className='mx-auto text-3xl font-semibold'>
@@ -215,7 +215,7 @@ export const Graph = ({
           whileInView='animate'
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className='group flex  w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-8 text-center text-white shadow-md shadow-white xl:p-2'
+          className='group flex  w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-8 text-center text-white shadow-md shadow-gray-600 xl:p-2'
         >
           <DescriptionBox products={products[4]} translate={600} />
           <div className='relative mx-auto text-3xl font-semibold lg:left-36'>
@@ -229,7 +229,7 @@ export const Graph = ({
             viewport={{ once: true }}
             className='relative -left-[37rem] hidden xl:flex'
           >
-            <motion.div className='relative -left-6 flex h-24 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-56 md:p-10'>
+            <motion.div className='relative -left-6 flex h-24 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-56 md:p-10'>
               {products[5].title}
             </motion.div>
             <svg
@@ -274,7 +274,7 @@ export const Graph = ({
           whileInView='animate'
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className='group mx-auto flex w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:p-8'
+          className='group mx-auto flex w-full items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:p-8'
         >
           <DescriptionBox products={products[6]} translate={600} />
           <div className=' mx-auto text-3xl font-semibold'>
@@ -352,7 +352,7 @@ export const Graph = ({
             whileInView='animate'
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-44 md:p-10 md:text-xl'
+            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-44 md:p-10 md:text-xl'
           >
             {products[7].title}
           </motion.div>
@@ -362,7 +362,7 @@ export const Graph = ({
             whileInView='animate'
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-48 md:p-10 md:text-xl'
+            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-48 md:p-10 md:text-xl'
           >
             {products[8].title}
           </motion.div>
@@ -372,7 +372,7 @@ export const Graph = ({
             whileInView='animate'
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-white md:w-44 md:p-10 md:text-xl'
+            className='flex h-16 w-24 items-center rounded-xl border-2 border-gray-600 bg-[#d4d4d4] bg-opacity-10 p-4 text-center text-white shadow-md shadow-gray-600 md:w-44 md:p-10 md:text-xl'
           >
             {products[9].title}
           </motion.div>
@@ -394,14 +394,12 @@ export const DescriptionBox = ({
 }) => {
   return (
     <motion.div
-      className='absolute mt-4 flex h-[10rem] w-[20rem] flex-col gap-2 rounded-xl bg-gray-400 p-2 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
+      className='absolute mt-4 flex h-[10rem] w-[20rem] flex-col gap-2 rounded-xl bg-transparent p-2 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
       style={{ x: translate }}
       transition={{ duration: 1 }}
     >
-      <div className='text-primary-600 text-2xl font-semibold  '>
-        {products.title}
-      </div>
-      <div className='text-center text-base text-black '>
+      <div className='text-2xl font-semibold text-white '>{products.title}</div>
+      <div className='px-6 text-left text-base text-white'>
         {products.description}
       </div>
     </motion.div>
